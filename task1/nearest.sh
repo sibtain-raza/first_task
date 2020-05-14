@@ -60,6 +60,6 @@ echo "soldier    date" > /home/CheifCommander/nearest10.txt
 awk '{print $2,$3}' 4.txt >> /home/CheifCommander/nearest10.txt
  
 rm 1.txt 2.txt 3.txt 4.txt
-echo "$(crontab -l ; echo  '1 0 * * * bash /home/sibtain/nearest.sh')" | crontab -
+echo "$(crontab -l ; echo  '1 6 * * * bash /home/sibtain/nearest.sh')" | crontab -
 
 
