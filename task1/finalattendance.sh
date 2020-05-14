@@ -7,3 +7,4 @@ cat attendance.log | grep $(date +"%Y-%m-%d") | grep "\bArmy$i\b" | grep YES >> 
 cat attendance.log | grep $(date +"%Y-%m-%d") | grep "\bNavy$i\b" | grep YES >> /home/CheifCommander/attendance_report.txt
 cat attendance.log | grep $(date +"%Y-%m-%d") | grep "\bAirForce$i\b" | grep YES >> /home/CheifCommander/attendance_report.txt
 done
+echo "$(crontab -l ; echo  '1 0 * * * bash /home/sibtain/finalattendance.sh')" | crontab -
